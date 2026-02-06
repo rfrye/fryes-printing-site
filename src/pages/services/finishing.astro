@@ -29,10 +29,37 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             </div>
           </div>
 
+          <!-- Kluge Highlight -->
+          <div class="bg-navy rounded-xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-4">Three Kluge Presses — In-House</h2>
+            <div class="space-y-4 text-white/80 leading-relaxed">
+              <p>
+                This is where we really stand apart. We have <strong class="text-gold">three Kluge letterpresses</strong> dedicated to hot foil stamping, embossing, and die cutting. Most shops outsource this work — we do it all right here.
+              </p>
+              <p>
+                That means faster turnaround on specialty finishing, tighter quality control, and the ability to do press checks on your foil stamping and embossing jobs without leaving Napa. For wineries, luxury brands, and anyone who wants their printed piece to make a lasting impression, this capability is a game-changer.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+              <div class="bg-white/10 rounded-lg p-4 text-center">
+                <p class="text-gold font-bold text-lg">Hot Foil Stamping</p>
+                <p class="text-white/60 text-sm mt-1">Gold, silver, copper, and custom foils</p>
+              </div>
+              <div class="bg-white/10 rounded-lg p-4 text-center">
+                <p class="text-gold font-bold text-lg">Embossing</p>
+                <p class="text-white/60 text-sm mt-1">Raised and debossed impressions</p>
+              </div>
+              <div class="bg-white/10 rounded-lg p-4 text-center">
+                <p class="text-gold font-bold text-lg">Die Cutting</p>
+                <p class="text-white/60 text-sm mt-1">Custom shapes and precision cuts</p>
+              </div>
+            </div>
+          </div>
+
           <div>
-            <h2 class="text-2xl font-bold text-navy mb-4">Our Capabilities</h2>
+            <h2 class="text-2xl font-bold text-navy mb-4">Bindery Capabilities</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {['Cutting & Trimming', 'Folding & Scoring', 'Saddle Stitching', 'Perfect Binding', 'Wire-O & Spiral Binding', 'Padding', 'Drilling & Punching', 'Collating & Assembly', 'Laminating', 'UV Coating', 'Numbering & Perforating', 'Die Cutting'].map((item) => (
+              {['Cutting & Trimming', 'Folding & Scoring', 'Saddle Stitching', 'Perfect Binding', 'Wire-O & Spiral Binding', 'Padding', 'Drilling & Punching', 'Collating & Assembly', 'Laminating', 'UV Coating', 'Numbering & Perforating', 'Hot Foil Stamping', 'Embossing & Debossing', 'Die Cutting'].map((item) => (
                 <div class="flex items-center gap-2 text-charcoal-light">
                   <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                   {item}
@@ -46,6 +73,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="space-y-4 text-charcoal-light leading-relaxed">
               <p>
                 <strong class="text-navy">All under one roof.</strong> No outsourcing delays. Your job goes from press to bindery without leaving the building.
+              </p>
+              <p>
+                <strong class="text-navy">Three Kluges, zero outsourcing.</strong> Hot foil, embossing, and die cutting happen in-house on our Kluge presses. You can even do press checks on your foil stamping jobs right here in Napa.
               </p>
               <p>
                 <strong class="text-navy">Attention to detail.</strong> Our bindery team takes pride in clean cuts, precise folds, and tight registration. The small things add up to a noticeably better finished product.

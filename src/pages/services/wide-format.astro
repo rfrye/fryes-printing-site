@@ -41,11 +41,30 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             </div>
           </div>
 
+          <!-- Wine Packaging -->
+          <div class="bg-warm-gray rounded-xl p-8 border border-gold/20">
+            <h2 class="text-2xl font-bold text-navy mb-4">Wine Industry Packaging</h2>
+            <p class="text-charcoal-light leading-relaxed mb-4">
+              We're in Napa Valley — so naturally, we know wine packaging. From the tasting room to the shipping dock, we produce the printed materials that wineries rely on to protect and present their product.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {['Case Wraps', 'Pallet Wraps', 'Shipping Boxes', 'Point-of-Sale Displays', 'Tasting Room Signage', 'Event Banners'].map((item) => (
+                <div class="flex items-center gap-2 text-charcoal-light">
+                  <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div>
             <h2 class="text-2xl font-bold text-navy mb-4">Why Wide Format at Frye's?</h2>
             <div class="space-y-4 text-charcoal-light leading-relaxed">
               <p>
                 <strong class="text-navy">Material expertise.</strong> We'll help you choose the right substrate and finish for your environment — whether it's a temporary indoor display or an outdoor sign that needs to last.
+              </p>
+              <p>
+                <strong class="text-navy">Wine industry experience.</strong> We work with wineries across Napa Valley every day. We understand the materials, timelines, and quality standards the industry demands.
               </p>
               <p>
                 <strong class="text-navy">Finishing included.</strong> Grommets, hemming, mounting, laminating — we handle the finishing in-house so your piece is ready to install when it leaves our shop.

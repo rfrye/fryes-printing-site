@@ -2,100 +2,259 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Equipment & Capabilities — Frye's Printing" description="See the professional printing equipment at Frye's Printing. Everything in-house for complete quality control.">
+<BaseLayout title="Equipment & Capabilities — Frye's Printing" description="See the professional printing equipment at Frye's Printing. Offset presses, digital presses, wide format, and specialty finishing — all in-house.">
   <!-- Page Header -->
   <section class="bg-navy text-white py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Our Shop</p>
       <h1 class="text-4xl sm:text-5xl font-extrabold">Equipment &amp; Capabilities</h1>
       <p class="text-white/70 text-lg mt-4 max-w-2xl">
-        Everything under one roof. Our investment in quality equipment means your job stays in-house from start to finish.
+        The majority of your job stays under our roof — from prepress through finishing. Here's what we're working with.
       </p>
     </div>
   </section>
 
+  <!-- Equipment List -->
   <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Placeholder message -->
-      <div class="bg-warm-gray rounded-2xl p-8 lg:p-12 text-center mb-16">
-        <h2 class="text-2xl font-bold text-navy mb-4">Equipment List Coming Soon</h2>
-        <p class="text-charcoal-light text-lg max-w-2xl mx-auto">
-          We're putting together a detailed list of our presses, digital equipment, wide format printers, and finishing capabilities. Check back soon for the full rundown.
-        </p>
-      </div>
+      <h2 class="text-3xl font-bold text-navy mb-12 text-center">Our Equipment</h2>
 
-      <!-- Category placeholders -->
       <div class="space-y-12">
+        <!-- Pressroom -->
         <div>
-          <h2 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
+          <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
             <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
               <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
             </div>
             Offset Pressroom
-          </h2>
-          <div class="bg-warm-gray rounded-xl p-6">
-            <p class="text-charcoal-light italic">Equipment details pending — your presses, plate-making, and proofing equipment will be listed here.</p>
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Komori Lithrone L28</h4>
+              <p class="text-charcoal-light text-sm mt-1">With inline aqueous coater. Our flagship press for high-volume, high-quality offset work.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Heidelberg Speedmaster 52</h4>
+              <p class="text-charcoal-light text-sm mt-1">5-color configuration. Full-color plus spot color or coating in a single pass.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Heidelberg Speedmaster 52</h4>
+              <p class="text-charcoal-light text-sm mt-1">4-color configuration. Workhorse for standard CMYK process printing.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Heidelberg Speedmaster 46</h4>
+              <p class="text-charcoal-light text-sm mt-1">2-color configuration. Ideal for envelopes, letterhead, and 1- or 2-color work.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Digital -->
         <div>
-          <h2 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
+          <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
             <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
               <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
             </div>
             Digital Printing
-          </h2>
-          <div class="bg-warm-gray rounded-xl p-6">
-            <p class="text-charcoal-light italic">Equipment details pending — your digital presses and capabilities will be listed here.</p>
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-warm-gray rounded-xl p-6 border border-gold/20">
+              <h4 class="font-bold text-navy text-lg">Xerox Iridesse</h4>
+              <p class="text-charcoal-light text-sm mt-1">With inline booklet maker. Specialty toners including metallic gold, metallic silver, white, and clear.</p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="px-2.5 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">Metallic Gold</span>
+                <span class="px-2.5 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">Metallic Silver</span>
+                <span class="px-2.5 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">White</span>
+                <span class="px-2.5 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">Clear</span>
+              </div>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Ricoh Pro C7100</h4>
+              <p class="text-charcoal-light text-sm mt-1">With Plockmatic booklet maker. Specialty toners: clear and white.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Ricoh Pro C7100</h4>
+              <p class="text-charcoal-light text-sm mt-1">Second unit with clear and white specialty toners. Added capacity for high-demand periods.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Ricoh Pro C5100</h4>
+              <p class="text-charcoal-light text-sm mt-1">Fast, reliable digital press for everyday CMYK work and quick-turn jobs.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Wide Format -->
         <div>
-          <h2 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
+          <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
             <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
               <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             </div>
             Wide Format
-          </h2>
-          <div class="bg-warm-gray rounded-xl p-6">
-            <p class="text-charcoal-light italic">Equipment details pending — your large format printers and capabilities will be listed here.</p>
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-warm-gray rounded-xl p-6 border border-gold/20">
+              <h4 class="font-bold text-navy text-lg">Vanguard HS300D</h4>
+              <p class="text-charcoal-light text-sm mt-1">UV flatbed printer with white ink capability. Prints directly on rigid and flexible substrates — wood, acrylic, foam board, and more.</p>
+              <span class="inline-block mt-2 px-2.5 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">White Ink</span>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6 border border-gold/20">
+              <h4 class="font-bold text-navy text-lg">Xante X-33</h4>
+              <p class="text-charcoal-light text-sm mt-1">Digital envelope and specialty press with white ink. Perfect for custom envelopes and direct printing on colored stocks.</p>
+              <span class="inline-block mt-2 px-2.5 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full">White Ink</span>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">Colex Sharpcut</h4>
+              <p class="text-charcoal-light text-sm mt-1">Flatbed digital cutter with conveyor. Precision cutting, creasing, and routing for any substrate.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">HP Latex 360</h4>
+              <p class="text-charcoal-light text-sm mt-1">Roll-to-roll latex printer. Durable, vibrant output for indoor and outdoor applications.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Bindery & Finishing -->
         <div>
-          <h2 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
+          <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
             <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
               <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
             </div>
             Bindery &amp; Finishing
-          </h2>
-          <div class="bg-warm-gray rounded-xl p-6">
-            <p class="text-charcoal-light italic">Equipment details pending — your cutters, folders, stitchers, and finishing equipment will be listed here.</p>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
-            <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </h3>
+          <!-- Kluge highlight -->
+          <div class="bg-navy rounded-xl p-6 mb-4 text-white">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+              <div class="flex-1">
+                <h4 class="font-bold text-lg text-gold">3× Kluge Letterpresses</h4>
+                <p class="text-white/70 text-sm mt-1">Kluge EHE + 2× Kluge EHD — dedicated to hot foil stamping, embossing, and die cutting. In-house specialty finishing that most shops outsource.</p>
+              </div>
+              <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-white/10 text-gold text-xs font-semibold rounded-full">Hot Foil</span>
+                <span class="px-3 py-1 bg-white/10 text-gold text-xs font-semibold rounded-full">Embossing</span>
+                <span class="px-3 py-1 bg-white/10 text-gold text-xs font-semibold rounded-full">Die Cutting</span>
+              </div>
             </div>
-            Prepress
-          </h2>
-          <div class="bg-warm-gray rounded-xl p-6">
-            <p class="text-charcoal-light italic">Equipment details pending — your prepress, proofing, and CTP capabilities will be listed here.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { name: 'Stahl Folder', desc: 'High-speed precision folding for brochures, mailers, and inserts.' },
+              { name: 'Polar 92 Cutter (×2)', desc: 'Two programmable cutters for fast, accurate trimming.' },
+              { name: 'Stitcher', desc: 'Saddle stitching for booklets, catalogs, and multi-page pieces.' },
+              { name: 'Drill', desc: 'Paper drilling for binders, pads, and specialty applications.' },
+              { name: 'Laminator', desc: 'Film lamination for durability and a premium finish.' },
+              { name: 'Hem Welder & Grommet Machine', desc: 'Banner finishing — hemmed edges and grommets, ready to hang.' },
+            ].map((item) => (
+              <div class="bg-warm-gray rounded-xl p-5">
+                <h4 class="font-semibold text-navy">{item.name}</h4>
+                <p class="text-charcoal-light text-sm mt-1">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
 
-      <!-- CTA -->
-      <div class="mt-16 text-center">
-        <p class="text-charcoal-light text-lg mb-6">
-          Want to know if we can handle your project? Just ask.
-        </p>
-        <a href="/quote" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta text-white font-semibold rounded-lg hover:bg-terracotta-light transition-colors text-lg">
-          Request a Quote
-        </a>
+        <!-- Reprographics -->
+        <div>
+          <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-3">
+            <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            Reprographics
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">HP PageWide XL 5000</h4>
+              <p class="text-charcoal-light text-sm mt-1">High-speed large-format printing for architectural plans, blueprints, and technical documents.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <h4 class="font-bold text-navy text-lg">HP PageWide XL 8000</h4>
+              <p class="text-charcoal-light text-sm mt-1">Production-class large-format printer for high-volume reprographic and poster work.</p>
+            </div>
+          </div>
+          <p class="text-charcoal-light text-sm mt-4">
+            For reprographic services, plan uploads, and blueprint printing, visit
+            <a href="/plan-room" class="text-terracotta hover:text-terracotta-light font-medium">Frye's Plan Room</a>.
+          </p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section class="py-20 bg-warm-gray">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-navy mb-4 text-center">What We Can Do</h2>
+      <p class="text-charcoal-light text-lg text-center mb-12 max-w-2xl mx-auto">
+        Not sure what equipment you need? Here's what matters — what we can produce for you.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6">
+          <h3 class="font-bold text-navy mb-3">Offset Printing</h3>
+          <ul class="space-y-2 text-sm text-charcoal-light">
+            <li>1- to 5-color printing up to 20×28"</li>
+            <li>Inline aqueous coating</li>
+            <li>PMS / spot color matching</li>
+            <li>High-volume runs with consistent color</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-6">
+          <h3 class="font-bold text-navy mb-3">Digital Printing</h3>
+          <ul class="space-y-2 text-sm text-charcoal-light">
+            <li>Specialty toners: metallic gold, metallic silver, white, clear</li>
+            <li>Inline booklet making</li>
+            <li>Variable data &amp; personalization</li>
+            <li>Short runs with no minimums</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-6">
+          <h3 class="font-bold text-navy mb-3">Wide Format</h3>
+          <ul class="space-y-2 text-sm text-charcoal-light">
+            <li>UV flatbed printing on rigid &amp; flexible substrates</li>
+            <li>Latex printing for indoor/outdoor durability</li>
+            <li>Precision flatbed cutting with conveyor</li>
+            <li>Banners, signage, displays, packaging</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-6">
+          <h3 class="font-bold text-navy mb-3">Specialty Finishing</h3>
+          <ul class="space-y-2 text-sm text-charcoal-light">
+            <li>Hot foil stamping (gold, silver, copper, custom)</li>
+            <li>Embossing &amp; debossing</li>
+            <li>Die cutting (custom shapes)</li>
+            <li>All done in-house on 3 Kluge presses</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-6">
+          <h3 class="font-bold text-navy mb-3">Bindery</h3>
+          <ul class="space-y-2 text-sm text-charcoal-light">
+            <li>Cutting, folding, scoring</li>
+            <li>Saddle stitching &amp; perfect binding</li>
+            <li>Drilling, laminating, numbering</li>
+            <li>Banner hemming &amp; grommets</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-6">
+          <h3 class="font-bold text-navy mb-3">Reprographics</h3>
+          <ul class="space-y-2 text-sm text-charcoal-light">
+            <li>Architectural plans &amp; blueprints</li>
+            <li>Large-format document printing</li>
+            <li>Scanning &amp; digital archiving</li>
+            <li><a href="/plan-room" class="text-terracotta hover:text-terracotta-light font-medium">Frye's Plan Room &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-navy mb-4">Want to Know If We Can Handle Your Project?</h2>
+      <p class="text-charcoal-light text-lg mb-8">
+        If you don't see what you need listed here, ask us. Chances are we can do it — or we know someone who can.
+      </p>
+      <a href="/quote" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta text-white font-semibold rounded-lg hover:bg-terracotta-light transition-colors text-lg">
+        Request a Quote
+      </a>
     </div>
   </section>
 </BaseLayout>
