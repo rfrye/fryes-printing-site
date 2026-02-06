@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Request a Quote — Frye's Printing" description="Get a quote for your print project from Frye's Printing in Napa Valley. We typically respond within the same business day.">
+  <!-- Page Header -->
+  <section class="bg-navy text-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Let's Get Started</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold">Request a Quote</h1>
+      <p class="text-white/70 text-lg mt-4 max-w-2xl">
+        Tell us about your project and we'll get back to you with a quote — usually within the same business day.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <form name="quote" method="POST" data-netlify="true" class="space-y-6">
+        <input type="hidden" name="form-name" value="quote" />
+
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-xl font-bold text-navy mb-4">Your Information</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="name" class="block text-sm font-medium text-charcoal mb-1.5">Name *</label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+            </div>
+            <div>
+              <label for="company" class="block text-sm font-medium text-charcoal mb-1.5">Company</label>
+              <input type="text" id="company" name="company"
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-charcoal mb-1.5">Email *</label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-charcoal mb-1.5">Phone *</label>
+              <input type="tel" id="phone" name="phone" required
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Details -->
+        <div class="pt-4">
+          <h2 class="text-xl font-bold text-navy mb-4">Project Details</h2>
+          <div class="space-y-5">
+            <div>
+              <label for="project-type" class="block text-sm font-medium text-charcoal mb-1.5">Project Type *</label>
+              <select id="project-type" name="project-type" required
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors bg-white">
+                <option value="">Select a project type...</option>
+                <option value="business-cards">Business Cards</option>
+                <option value="brochures">Brochures / Flyers</option>
+                <option value="catalogs">Catalogs / Booklets</option>
+                <option value="letterhead">Letterhead / Envelopes</option>
+                <option value="postcards">Postcards / Mailers</option>
+                <option value="posters">Posters</option>
+                <option value="banners">Banners / Signage</option>
+                <option value="labels">Labels / Stickers</option>
+                <option value="packaging">Packaging</option>
+                <option value="wine-labels">Wine Labels</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="quantity" class="block text-sm font-medium text-charcoal mb-1.5">Quantity</label>
+                <input type="text" id="quantity" name="quantity" placeholder="e.g., 500, 1000, 5000"
+                  class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+              </div>
+              <div>
+                <label for="size" class="block text-sm font-medium text-charcoal mb-1.5">Finished Size</label>
+                <input type="text" id="size" name="size" placeholder='e.g., 8.5" x 11", 4" x 6"'
+                  class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="colors" class="block text-sm font-medium text-charcoal mb-1.5">Colors</label>
+                <select id="colors" name="colors"
+                  class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors bg-white">
+                  <option value="">Select...</option>
+                  <option value="4/4">4-color both sides (4/4)</option>
+                  <option value="4/1">4-color front / 1-color back (4/1)</option>
+                  <option value="4/0">4-color front only (4/0)</option>
+                  <option value="1/1">1-color both sides (1/1)</option>
+                  <option value="pms">PMS / Spot Colors</option>
+                  <option value="not-sure">Not sure</option>
+                </select>
+              </div>
+              <div>
+                <label for="paper" class="block text-sm font-medium text-charcoal mb-1.5">Paper / Stock</label>
+                <input type="text" id="paper" name="paper" placeholder="e.g., 100# Gloss Cover, 70# Offset"
+                  class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+              </div>
+            </div>
+
+            <div>
+              <label for="finishing" class="block text-sm font-medium text-charcoal mb-1.5">Finishing / Special Requirements</label>
+              <input type="text" id="finishing" name="finishing" placeholder="e.g., fold, saddle stitch, die cut, laminate, foil"
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+            </div>
+
+            <div>
+              <label for="timeline" class="block text-sm font-medium text-charcoal mb-1.5">When do you need it?</label>
+              <input type="text" id="timeline" name="timeline" placeholder="e.g., 2 weeks, by March 15, ASAP"
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors" />
+            </div>
+
+            <div>
+              <label for="details" class="block text-sm font-medium text-charcoal mb-1.5">Additional Details</label>
+              <textarea id="details" name="details" rows="4" placeholder="Anything else we should know about your project..."
+                class="w-full px-4 py-3 border border-warm-gray-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-y"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- File note -->
+        <div class="bg-warm-gray rounded-lg p-5">
+          <p class="text-sm text-charcoal-light">
+            <strong class="text-navy">Have files to send?</strong> After submitting this form, you can send your files to us via
+            <a href="https://wetransfer.com" target="_blank" rel="noopener noreferrer" class="text-terracotta hover:text-terracotta-light font-medium">WeTransfer</a>
+            to <strong>info@fryesprinting.com</strong>. See our <a href="/send-files" class="text-terracotta hover:text-terracotta-light font-medium">Send Files</a> page for details.
+          </p>
+        </div>
+
+        <button type="submit"
+          class="w-full sm:w-auto px-10 py-4 bg-terracotta text-white font-semibold rounded-lg hover:bg-terracotta-light transition-colors text-lg">
+          Submit Quote Request
+        </button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Wide Format Printing — Frye's Printing" description="Large format printing in Napa Valley. Banners, posters, signage, trade show displays, and more.">
+  <section class="bg-navy text-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="/services" class="text-gold text-sm font-medium hover:text-gold-light transition-colors">&larr; All Services</a>
+      <h1 class="text-4xl sm:text-5xl font-extrabold mt-4">Wide Format Printing</h1>
+      <p class="text-white/70 text-lg mt-4 max-w-2xl">
+        Think big. Our wide format capabilities let you go large with vivid color and sharp detail for indoor and outdoor applications.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div class="lg:col-span-2 space-y-8">
+          <div>
+            <h2 class="text-2xl font-bold text-navy mb-4">Go Large</h2>
+            <div class="space-y-4 text-charcoal-light leading-relaxed">
+              <p>
+                From eye-catching trade show displays to storefront banners and wall graphics, our wide format printers produce vivid, high-resolution output on a variety of substrates. Whether you need a single one-off piece or a full set of event signage, we've got you covered.
+              </p>
+              <p>
+                We print on vinyl, fabric, rigid substrates, adhesive-backed materials, and more. Indoor or outdoor, short-term or long-lasting — we'll recommend the right material for your application.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-navy mb-4">Ideal For</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {['Vinyl Banners', 'Trade Show Displays', 'Posters & Prints', 'Window Graphics', 'Wall Murals', 'Yard Signs', 'Retractable Banners', 'Event Signage'].map((item) => (
+                <div class="flex items-center gap-2 text-charcoal-light">
+                  <svg class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-navy mb-4">Why Wide Format at Frye's?</h2>
+            <div class="space-y-4 text-charcoal-light leading-relaxed">
+              <p>
+                <strong class="text-navy">Material expertise.</strong> We'll help you choose the right substrate and finish for your environment — whether it's a temporary indoor display or an outdoor sign that needs to last.
+              </p>
+              <p>
+                <strong class="text-navy">Finishing included.</strong> Grommets, hemming, mounting, laminating — we handle the finishing in-house so your piece is ready to install when it leaves our shop.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-warm-gray rounded-xl p-6 sticky top-28">
+            <h3 class="font-bold text-navy mb-4">Get a Quote</h3>
+            <p class="text-charcoal-light text-sm mb-5">
+              Need banners, signage, or large format prints? Let us know the details.
+            </p>
+            <a href="/quote" class="block w-full px-6 py-3 bg-terracotta text-white text-center font-semibold rounded-lg hover:bg-terracotta-light transition-colors">
+              Request a Quote
+            </a>
+            <p class="text-charcoal-light text-xs mt-4 text-center">
+              Or call <a href="tel:707-253-1114" class="text-terracotta hover:text-terracotta-light">(707) 253-1114</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

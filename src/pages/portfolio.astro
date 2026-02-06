@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Portfolio — Frye's Printing" description="See examples of our work. Quality commercial printing from Frye's Printing in Napa Valley.">
+  <!-- Page Header -->
+  <section class="bg-navy text-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gold font-semibold text-sm uppercase tracking-wider mb-3">Our Work</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold">Portfolio</h1>
+      <p class="text-white/70 text-lg mt-4 max-w-2xl">
+        A showcase of our printed work — from business cards to wide format displays.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Coming soon message -->
+      <div class="text-center mb-16">
+        <div class="bg-warm-gray rounded-2xl p-12 max-w-2xl mx-auto">
+          <svg class="w-16 h-16 text-gold/50 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <h2 class="text-2xl font-bold text-navy mb-4">Portfolio Coming Soon</h2>
+          <p class="text-charcoal-light text-lg mb-6">
+            We're curating a gallery of our best work to showcase here. In the meantime, feel free to reach out and we'll be happy to show you samples.
+          </p>
+          <a href="/contact" class="text-terracotta font-semibold hover:text-terracotta-light transition-colors">
+            Contact us to see samples &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Placeholder grid for future -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {['Brochures', 'Business Cards', 'Catalogs', 'Posters', 'Wine Labels', 'Wide Format'].map((category) => (
+          <div class="bg-warm-gray rounded-xl aspect-[4/3] flex items-center justify-center group hover:bg-warm-gray-dark transition-colors cursor-default">
+            <div class="text-center">
+              <p class="font-semibold text-navy group-hover:text-gold transition-colors">{category}</p>
+              <p class="text-charcoal-light text-sm mt-1">Photos coming soon</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-warm-gray">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-navy mb-4">Have a Project in Mind?</h2>
+      <p class="text-charcoal-light text-lg mb-8">
+        Let's discuss your next print project. We'd love to add your work to our portfolio.
+      </p>
+      <a href="/quote" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta text-white font-semibold rounded-lg hover:bg-terracotta-light transition-colors text-lg">
+        Request a Quote
+      </a>
+    </div>
+  </section>
+</BaseLayout>
