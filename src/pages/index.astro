@@ -1,179 +1,95 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const services = [
+  {
+    title: 'Offset Printing',
+    href: '/services/offset',
+    description: 'High-volume lithographic printing delivering exceptional color accuracy, consistency, and value for large runs.',
+    items: ['Brochures & Catalogs', 'Stationery & Letterhead', 'Marketing Materials', 'Packaging & Labels'],
+  },
+  {
+    title: 'Digital Printing',
+    href: '/services/digital',
+    description: 'Fast-turnaround, cost-effective printing for short to medium runs with no minimum quantities.',
+    items: ['Variable Data Printing', 'Short-Run Brochures', 'Personalized Pieces', 'Quick-Turn Projects'],
+  },
+  {
+    title: 'Wide Format',
+    href: '/services/wide-format',
+    description: 'Large-scale printing for banners, posters, signage, and displays — indoor and outdoor.',
+    items: ['Banners & Flags', 'Trade Show Displays', 'Posters & Prints', 'Window & Wall Graphics'],
+  },
+  {
+    title: 'Bindery & Finishing',
+    href: '/services/finishing',
+    description: 'Complete post-press services to give your printed piece the perfect finish.',
+    items: ['Cutting & Trimming', 'Folding & Scoring', 'Binding & Stitching', 'Laminating & Coating'],
+  },
+  {
+    title: 'Specialty Work',
+    href: '/services/specialty',
+    description: 'Hot foil stamping, embossing, and die cutting on our three in-house Kluge presses — premium finishes most shops outsource.',
+    items: ['Hot Foil Stamping', 'Embossing & Debossing', 'Die Cutting', 'Custom Shapes'],
+  },
+  {
+    title: 'Mailing Services',
+    href: '/services/mailing',
+    description: 'Print it, address it, mail it — all from one shop. Direct mail, custom envelopes, and bulk mailing.',
+    items: ['Envelope Addressing', 'Custom Envelopes', 'Direct Mail Campaigns', 'Bulk Mail Prep'],
+  },
+];
 ---
 
-<BaseLayout title="Frye's Printing — Commercial Print Shop in Napa Valley">
-  <!-- Hero Section -->
-  <section class="bg-navy text-white relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy-light/30 to-navy"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
-      <div class="max-w-3xl">
-        <p class="text-gold font-semibold text-sm uppercase tracking-wider mb-4">Napa Valley's Print Shop</p>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          Premium Printing,<br>
-          <span class="text-gold">Personal Service</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
-          We're a family-owned commercial print shop right here in Napa Valley. With most production handled in-house — from offset to wide format to specialty finishing — you get quality you can see and service you can count on.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/quote" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta text-white font-semibold rounded-lg hover:bg-terracotta-light transition-colors text-lg">
-            Request a Quote
-          </a>
-          <a href="/services" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors text-lg">
-            Our Services
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Frye's -->
-  <section class="py-20 bg-warm-gray">
+<BaseLayout title="Services — Frye's Printing" description="Full-service commercial printing: offset, digital, wide format, and finishing. Everything in-house at Frye's Printing in Napa Valley.">
+  <!-- Page Header -->
+  <section class="bg-navy text-white py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Why Frye's?</h2>
-        <p class="text-charcoal-light text-lg max-w-2xl mx-auto">
-          We combine the capabilities of a large print operation with the care of a family business.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Differentiator 1 -->
-        <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-navy mb-2">Produced In-House</h3>
-          <p class="text-charcoal-light text-sm leading-relaxed">
-            The vast majority of your job — from prepress through finishing — happens under our roof. That means tighter quality control and faster turnaround.
-          </p>
-        </div>
-
-        <!-- Differentiator 2 -->
-        <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-navy mb-2">Local Press Checks</h3>
-          <p class="text-charcoal-light text-sm leading-relaxed">
-            Skip the drive. Approve your press checks right here in Napa Valley — not hours away.
-          </p>
-        </div>
-
-        <!-- Differentiator 3 -->
-        <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-navy mb-2">3rd Generation Family Owned</h3>
-          <p class="text-charcoal-light text-sm leading-relaxed">
-            Three generations of printers. You're not a ticket number here — you're part of the family.
-          </p>
-        </div>
-
-        <!-- Differentiator 4 -->
-        <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-5">
-            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-          </div>
-          <h3 class="text-lg font-bold text-navy mb-2">Specialty Finishing</h3>
-          <p class="text-charcoal-light text-sm leading-relaxed">
-            Three Kluge presses for hot foil stamping, embossing, and die cutting — in-house capabilities most shops can't offer.
-          </p>
-        </div>
-      </div>
+      <p class="text-gold font-semibold text-sm uppercase tracking-wider mb-3">What We Do</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold">Our Services</h1>
+      <p class="text-white/70 text-lg mt-4 max-w-2xl">
+        From prepress to finishing, we handle every step in-house. That means better quality control, faster turnaround, and one point of contact for your entire project.
+      </p>
     </div>
   </section>
 
-  <!-- Services Overview -->
   <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">What We Do</h2>
-        <p class="text-charcoal-light text-lg max-w-2xl mx-auto">
-          From business cards to building wraps, we've got the equipment and expertise to handle it.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <a href="/services/offset" class="group block bg-warm-gray rounded-xl p-8 hover:bg-warm-gray-dark transition-colors">
-          <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Offset Printing</h3>
-          <p class="text-charcoal-light leading-relaxed">
-            High-volume lithographic printing for exceptional color accuracy and consistency. Ideal for large runs of brochures, catalogs, stationery, and marketing materials.
-          </p>
-        </a>
-
-        <a href="/services/digital" class="group block bg-warm-gray rounded-xl p-8 hover:bg-warm-gray-dark transition-colors">
-          <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Digital Printing</h3>
-          <p class="text-charcoal-light leading-relaxed">
-            Fast-turnaround, cost-effective printing for short to medium runs. Perfect for variable data, personalized pieces, and quick-turn projects.
-          </p>
-        </a>
-
-        <a href="/services/wide-format" class="group block bg-warm-gray rounded-xl p-8 hover:bg-warm-gray-dark transition-colors">
-          <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Wide Format</h3>
-          <p class="text-charcoal-light leading-relaxed">
-            Banners, posters, signage, and displays printed large and vivid. Indoor and outdoor solutions for events, retail, and corporate needs.
-          </p>
-        </a>
-
-        <a href="/services/finishing" class="group block bg-warm-gray rounded-xl p-8 hover:bg-warm-gray-dark transition-colors">
-          <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Bindery &amp; Finishing</h3>
-          <p class="text-charcoal-light leading-relaxed">
-            Cutting, folding, binding, laminating, and specialty finishing. We handle every detail so your printed piece is ready to deliver.
-          </p>
-        </a>
-
-        <a href="/services/mailing" class="group block bg-warm-gray rounded-xl p-8 hover:bg-warm-gray-dark transition-colors md:col-span-2">
-          <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors">Mailing Services</h3>
-          <p class="text-charcoal-light leading-relaxed">
-            Print it, address it, mail it — all from one shop. Custom envelopes, direct mail campaigns, and bulk mailing prep. One contact from design to delivery.
-          </p>
-        </a>
-      </div>
-
-      <div class="text-center mt-10">
-        <a href="/services" class="text-terracotta font-semibold hover:text-terracotta-light transition-colors">
-          View all services &rarr;
-        </a>
+      <div class="space-y-8">
+        {services.map((service) => (
+          <a href={service.href} class="group block bg-warm-gray rounded-xl p-8 lg:p-10 hover:bg-warm-gray-dark transition-colors">
+            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+              <div class="flex-1">
+                <h2 class="text-2xl font-bold text-navy group-hover:text-gold transition-colors mb-3">
+                  {service.title}
+                </h2>
+                <p class="text-charcoal-light leading-relaxed text-lg">
+                  {service.description}
+                </p>
+              </div>
+              <div class="lg:w-64 shrink-0">
+                <ul class="space-y-1.5">
+                  {service.items.map((item) => (
+                    <li class="flex items-center gap-2 text-sm text-charcoal-light">
+                      <svg class="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Placeholder -->
-  <section class="py-20 bg-navy text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-4">What Our Customers Say</h2>
-      <p class="text-white/60 text-lg mb-12 max-w-2xl mx-auto">
-        We've built lasting relationships with businesses across Napa Valley and beyond.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white/5 rounded-xl p-8 border border-white/10">
-          <p class="text-white/80 italic mb-6">"Frye's has been our go-to printer for years. The quality is consistently excellent and the turnaround is always faster than expected."</p>
-          <p class="text-gold font-semibold text-sm">— Satisfied Customer</p>
-        </div>
-        <div class="bg-white/5 rounded-xl p-8 border border-white/10">
-          <p class="text-white/80 italic mb-6">"Having press checks right here in Napa is a game-changer. No more half-day trips to Sacramento. The team is a pleasure to work with."</p>
-          <p class="text-gold font-semibold text-sm">— Satisfied Customer</p>
-        </div>
-        <div class="bg-white/5 rounded-xl p-8 border border-white/10">
-          <p class="text-white/80 italic mb-6">"The personal attention you get at Frye's is something you just can't find at the big shops. They truly care about getting it right."</p>
-          <p class="text-gold font-semibold text-sm">— Satisfied Customer</p>
-        </div>
-      </div>
-
-      <p class="mt-8 text-white/40 text-sm">Testimonials coming soon — these are placeholders.</p>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
+  <!-- CTA -->
   <section class="py-20 bg-warm-gray">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Ready to Start Your Project?</h2>
-      <p class="text-charcoal-light text-lg mb-8 max-w-2xl mx-auto">
-        Tell us about your project and we'll get back to you with a quote — usually within the same business day.
+      <h2 class="text-3xl font-bold text-navy mb-4">Not Sure What You Need?</h2>
+      <p class="text-charcoal-light text-lg mb-8">
+        Tell us about your project and we'll help you figure out the best approach.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/quote" class="inline-flex items-center justify-center px-8 py-4 bg-terracotta text-white font-semibold rounded-lg hover:bg-terracotta-light transition-colors text-lg">
